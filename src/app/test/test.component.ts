@@ -13,14 +13,14 @@ import { Component, OnInit } from '@angular/core';
       <h2>{{url}}</h2>
 
 
-      <input [id]="myId" bind-disabled="isDisabled"  type="text" value="Vishwas">
-      <input id="{{myId}}" [disabled]="isDisabled"  type="text" value="Vishwas">
+      <input [id]="myId" bind-disabled="isDisabled"  type="text" value="Rutu">
+      <input id="{{myId}}" [disabled]="isDisabled"  type="text" value="Rutu">
       
 
-      <h2 class="text-success">Codevolution</h2>
-      <h2 [class]="successClass">Codevolution</h2>
-      <h2 class="text-special" [class]="successClass">Codevolution</h2>
-      <h2 [class.text-danger]="hasError">Codevolution</h2>
+      <h2 class="text-success">Stackroute</h2>
+      <h2 [class]="successClass">Stackroute</h2>
+      <h2 class="text-special" [class]="successClass">Stackroute</h2>
+      <h2 [class.text-danger]="hasError">Stackroute</h2>
       <h2 [ngClass]="messageClasses">Message</h2>
       
       <h2 [style.color]="'orange'">Style Binding</h2> 
@@ -30,7 +30,7 @@ import { Component, OnInit } from '@angular/core';
 
 
       <button (click)="onClick($event)">Greet</button>
-      <button (click)="greeting = 'Welcome Vishwas'">Greet Vishwas</button> 
+      <button (click)="greeting = 'Welcome Rutu'">Greet Rutu</button> 
       <h2>{{greeting}}</h2>
 
 
@@ -56,7 +56,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TestComponent implements OnInit {
 
-  public name = "Codevolution";
+  public name = "Stackroute";
   public url = window.location.href;
   public myId = "testId";
   public isDisabled = true;
