@@ -8,10 +8,10 @@ import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
     </h2>
     <button (click)=fireEvent()>Send Event</button>
 
-    <h2>{{"Codevolution" | lowercase}}</h2>
-    <h2>{{"Codevolution" | uppercase}}</h2>
-    <h2>{{"Welcome to codevolution" | titlecase}}</h2>
-    <h2>{{"Codevolution" | slice:3:6}}</h2>
+    <h2>{{"Stackroute" | lowercase}}</h2>
+    <h2>{{"Stackroute" | uppercase}}</h2>
+    <h2>{{"Welcome to Stackroute" | titlecase}}</h2>
+    <h2>{{"Stackroute" | slice:3:6}}</h2>
     <h2>{{person | json}}</h2>
 
     <h2>{{5.678 | number:'1.2-3'}}</h2>
@@ -45,8 +45,8 @@ export class TestComponent implements OnInit {
   @Output() public childEvent = new EventEmitter<string>();
 
   public person = {
-    "firstName": "John",
-    "lastName": "Doe"
+    "firstName": "Rutu",
+    "lastName": "Bacchuwar"
   }
 
   public date = new Date();
@@ -56,7 +56,7 @@ export class TestComponent implements OnInit {
   }
 
   fireEvent(){
-    this.childEvent.emit('Hey Codevolution');
+    this.childEvent.emit('Hey Stackroute');
   }
 
 }
